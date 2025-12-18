@@ -259,4 +259,4 @@ Note: Follow these steps ONLY if you are deploying the Server and Clients on dif
         Change the URL from localhost to the IP address of your Server Machine: url: http://<SERVER_IP>:3100/loki/api/v1/push
 
         Run the security container as a standalone sidecar on this machine.
-****# SecurityMonitor
+
