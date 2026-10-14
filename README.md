@@ -21,7 +21,7 @@ Events are brought together through **Promtail, Loki, and Grafana** to support i
 
 ## System Architecture
 
-![SecurityMonitor system architecture](architecture.png)
+![SecurityMonitor system architecture](Diagram_.png)
 
 *Figure 1. Original prototype architecture: client-side audit logging, independent filesystem monitoring, and centralized observability using Promtail, Loki, and Grafana.*
 
