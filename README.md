@@ -219,7 +219,7 @@ The thesis combines a review of regulatory requirements, STRIDE threat modeling 
 
 ## Image files
 
-For the images above to display on GitHub, upload `architecture.png` and `LogIntegrity.png` to the **same repository directory as `README.md`**.
+For the images above to display on GitHub, upload `Diagram_.png` and `LogIntegrity.png` to the **same repository directory as `README.md`**.
 
 ## Publication note
 
