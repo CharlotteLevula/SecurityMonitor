@@ -215,7 +215,7 @@ Turku University of Applied Sciences · Business Information Technology
 
 The thesis combines a review of regulatory requirements, STRIDE threat modeling of SA-FLaaS, design and implementation of the prototype, and evaluation of the monitoring approach.
 
-*Add the official thesis publication URL here when available.*
+ **[Read my Bachelor's Thesis](https://urn.fi/URN:NBN:fi:amk-2025122238837)**
 
 ## Image files
 
