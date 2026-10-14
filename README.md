@@ -23,8 +23,9 @@ Events are brought together through **Promtail, Loki, and Grafana** to support i
 
 ![SecurityMonitor system architecture](architecture.png)
 
-*Figure 1. Security monitoring architecture: client-side HMAC audit logging, an independent filesystem sidecar, and centralized visualization with Promtail, Loki, and Grafana.*
-  
+*Figure 1. Original prototype architecture: client-side audit logging, independent filesystem monitoring, and centralized observability using Promtail, Loki, and Grafana.*
+
+The independent monitor is intended to provide a second perspective on client activity. Its independence depends on deployment boundaries and host/container permissions; an attacker with sufficient host-level control may compromise both sources.
 
 ## Key capabilities
 
@@ -37,6 +38,12 @@ Events are brought together through **Promtail, Loki, and Grafana** to support i
 | Correlation timeline | Compare application claims with sidecar observations to flag inconsistencies |
 
 ## Prototype evaluation
+
+### Log integrity detection
+
+![Critical log truncation alert displayed in Grafana](LogIntegrity.png)
+
+*Figure 2. Filesystem integrity monitoring identifies a log truncation event and emits a critical alert.*
 
 My thesis documents a **Fake Training** anomaly scenario and a **log-integrity alert**, alongside screenshots of the correlation timeline and monitoring dashboard (Chapter 5, *Prototype Monitoring Tool*). These demonstrations show the prototype's intended detection workflow under the evaluated conditions; they do not establish comprehensive detection coverage.
 
@@ -209,6 +216,10 @@ Turku University of Applied Sciences · Business Information Technology
 The thesis combines a review of regulatory requirements, STRIDE threat modeling of SA-FLaaS, design and implementation of the prototype, and evaluation of the monitoring approach.
 
 *Add the official thesis publication URL here when available.*
+
+## Image files
+
+For the images above to display on GitHub, upload `architecture.png` and `LogIntegrity.png` to the **same repository directory as `README.md`**.
 
 ## Publication note
 
